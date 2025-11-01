@@ -14,7 +14,7 @@ Demonstrar o conhecimento sobre:
 
 ---
 
-## 🧭 Principais Funcionalidades e Passos
+## Principais Funcionalidades e Passos
 
 ### 1. Visualização de AMIs e Instâncias  
 - No AWS Explorer, expanda o nó **Amazon EC2**. 
@@ -42,6 +42,20 @@ Demonstrar o conhecimento sobre:
 - Você também pode definir o comportamento de desligamento (Shutdown) para que a instância “pare” ou “encerre” quando uma operação de desligamento for executada dentro da instância.
 
 ---
+
+## Aprendizados e Insights
+
+Instancias EC2 são nossas VMs na AWS
+- É possível clonar ambientes a partir de imagens já existente, exportando-as para vários ambientes. Para se fazer isso utiliza-se o AMI (toda a configuração é criada baseada na imagem da estância), tudo com poucos cliques.
+- Existem AMIs públicas (pode-se gerar ambientes pré-formatados).
+- Para fazer backups, normalmente a equipe de infra faz um snapshot (pode ser armazenado em outras regions, para fins de economia, por exemplo) com a frequência necessária para a aplicação. A recuperação de um ambiente pode ser feita a partir de um snapshot.
+- A geração de um snapshot tem que ser em ambiente diferente daquele onde está o EC2 copiado.
+- "Desenhar" a arquitetura pode melhorar a absorção do conteúdo, pois esse recursofacilita a visão da arquitetura e sua melhoria.
+- Entendi a importância de definir claramente o comportamento de desligamento das instâncias para evitar custos desnecessários.  
+
+---
+
+> *Desenvolvido por Luciane Silva de Miranda como parte do desafio técnico Gerenciando Instâncias EC2 na AWS*
 
 
 
